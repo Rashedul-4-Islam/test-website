@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*---------
+ Top Header styles
+ ------ */
+ .copa-container{
+    width: 100%;
+ }
+ 
+.copa-section{
+    width: 100%;
+    height: 700px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+.copa-america{
+    width: 50%;
+    margin-left: 24px;
+}
+.copa-america h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    color: #ffffff;
+}
+.copa-america a{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    position: relative;
+    top: 38px;
+    color:whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif
+}
+
+.copa-banner{
+    width: 50%;
+}
+.copa-banner img:hover{
+    transform: scale(0.8) rotate(30deg);
+    transition: transform 1s ease-out;
+}
+
+/* ----------
+   main section style
+   -------------  */
+.main-section{
+    width: 100%;
+}
+.top-player{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    padding: 10px;
+    background-color:whitesmoke;
+    box-shadow: 2px 8px 12px grey;
+}
+
+.player img{
+    width: 300px;
+    height: 256px;  
+}
+.profile{
+    width: 300px;
+    height: 426px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.player-details{
+    margin-top: 16px;
+}
+
+.player-details h2{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+.player-details p{
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+}
+/* teams kits  styles */
+
+.kits-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    background-color: hotpink;
+    padding: 30px;
+}
+.jersy-gallery h2, .fan-shop > h2{
+    font-family: 'Poppins', sans-serif;
+   
+}
+.kit-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:30px ;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+   
+    padding:20px
+}
+.kits{
+    width: 310px;
+    height: 390px;
+    text-align: center;
+    background-color:#ffffff
+    ;
+    box-shadow: 5px 10px 15px rgb(29, 31, 27);
+    border-radius: 10px;
+}
+.kits p{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(76, 221, 40);
+}
+.kits:hover{
+    transform: scale(0.8);
+    transition: transform 0.5s ease-out;
+}
+.kits img{
+    width: 250px;
+    height: 310px;
+    padding: 10px;
+}
+
+/* ------------
+football fan shop styles 
+-------------- */
+.shop-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+.shop{
+    width: 210px;
+    padding: 50px;
+    line-height: 30px;
+    background-color: hotpink;
+    border-radius: 10px; 
+}
+.shop:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s ;
+}
+.products-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:30px ;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+.products img{
+    width: 200px;
+    height: 190px;
+    padding: 10px;
+    border-radius: 10px;
+    border:3px solid;
+    box-shadow: 5px 5px 20px grey;
+}
+.products img:hover{
+    transform: scale(0.9);
+}
+.item-details p{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(153, 53, 53);
+}
+.item-details a{
+    background-color: rgb(41, 38, 37);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.filled{
+    color:rgb(156, 233, 32);
+}
+
+
+/* ----------
+footer area styles 
+---------- */
+
+.logo-container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.football-logo{
+    width: 484px;
+    height: 200px;
+    display: block;
+    text-align: center; 
+}
+.football-logo img{
+     width: 483.87px;
+     height: 110px;
+}
+.icon i{
+    margin-left: 20px;
+    color:rgb(38, 39, 37);
+    padding-left: 30px;
+   
+}
+.football-logo p{
+    margin-top: 30px;
+    padding-left: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+/* -------------responsive for mobile device
+--------------  */
+@media only screen and (max-width:688px){
+ 
+
+    .copa-section{
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .copa-america h1{
+        font-size: 36px;
+    }
+    .copa-banner img{
+        width: 100vw;
+        height: 260px;
+        margin-left: 20px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        width: 100vw;
+        margin-top: -71px;
+        grid-gap: 0;
+    }
+    .kits-container{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        margin-top: 5px;
+        background-color: white;
+        
+    }
+     .kit-gallery{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        width: 100vw;
+        grid-gap: 0;
+        width: 100%;
+        background-color: white;
+        
+
+     }
+     .shop-container{
+        
+         margin-top: -10px;
+     }
+      .products-item{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        width: 100vw;
+        grid-gap: 0;
+    }
+    .logo-container{
+        width: 300px;
+    }
+    .football-logo img{
+        width: 300px;
+    }
+}
+
+/*-------------
+ responsive for tab/ipad device -
+ ------------- */
+ @media only screen and (min-width:689px) and (max-width:992px){
+ 
+    .copa-banner img{
+        width: 100%;
+        height: 260px;
+        margin-left: 20px;
+    }
+    .players, .kit-gallery, .products-item{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+ }

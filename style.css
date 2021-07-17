@@ -66,9 +66,6 @@ img{
     grid-gap: 30px;
 }
 
-.player{
-    height: 100%;
-}
 .profile{
     max-width: 500px;
     height: 90%;
@@ -92,35 +89,34 @@ img{
  /* team kits styles  */
 .team-kits{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
     background-color: hotpink;
-    padding: 15px;
+    padding: 70px 0;
 }
-
-.jersy-gallery h2, .fan-shop > h2{
-    font-family: 'Poppins', sans-serif;
-   
+.team-kits h2{
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
 }
 
 .kit-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top:30px ;
-    grid-row-gap: 20px;
-    grid-column-gap: 30px;
-    padding:20px
+   grid-gap:30px;
 }
 
 .kits{
-    width: 310px;
-    height: 390px;
+    width: 90%;
+    height: 100%;
     text-align: center;
     background-color:#ffffff
     ;
     box-shadow: 5px 10px 15px rgb(29, 31, 27);
     border-radius: 10px;
+}
+.kits img{
+    width: 85%;
+    height: 80%;
 }
 .kits p{
     font-size: 17px;
@@ -131,25 +127,62 @@ img{
     transform: scale(0.8);
     transition: transform 0.5s ease-out;
 }
-.kits img{
-    width: 250px;
-    height: 310px;
+
+
+/* shop area styles  */
+.shop-area{
+    width: 100%;
+    padding: 70px 0;
+}
+
+
+.products-item{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  
+}
+
+.shop{
+    width: 80%;
+    height: 95%;
+    border: 2px solid green;
     padding: 10px;
+}
+.shop img{
+    width: 70%;
+}
+.item-details{
+    line-height: 2rem;
+}
+.item-details p{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(153, 53, 53);
+}
+.item-details a{
+    background-color: rgb(41, 38, 37);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+}
+.filled{
+    color:rgb(156, 233, 32);
 }
 
 
 @media only screen and (max-width: 576px){
    
 
-    .copa-section {
-      display: block;
-      padding-top: 0px;
-    }
+    
     .copa-section {
         grid-template-columns: repeat(1, 1fr);
       }
     
-     .players, .kit-gallery{
+     .players, .kit-gallery, .products-item{
         grid-template-columns: repeat(1, 1fr);
         
       }

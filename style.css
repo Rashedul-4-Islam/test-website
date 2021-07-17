@@ -89,13 +89,14 @@ img{
     margin-bottom: 15px;
     font-size: 1rem;
 }
-
-.container{
+ /* team kits styles  */
+.team-kits{
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 90px;
     background-color: hotpink;
-    padding: 30px;
+    padding: 15px;
 }
 
 .jersy-gallery h2, .fan-shop > h2{

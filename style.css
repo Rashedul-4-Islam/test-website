@@ -90,14 +90,55 @@ img{
     font-size: 1rem;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    background-color: hotpink;
+    padding: 30px;
+}
+
+.jersy-gallery h2, .fan-shop > h2{
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.kit-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:30px ;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    padding:20px
+}
+
+.kits{
+    width: 310px;
+    height: 390px;
+    text-align: center;
+    background-color:#ffffff
+    ;
+    box-shadow: 5px 10px 15px rgb(29, 31, 27);
+    border-radius: 10px;
+}
+.kits p{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(76, 221, 40);
+}
+.kits:hover{
+    transform: scale(0.8);
+    transition: transform 0.5s ease-out;
+}
+.kits img{
+    width: 250px;
+    height: 310px;
+    padding: 10px;
+}
+
 
 @media only screen and (max-width: 576px){
-    .copa-cup{
-        width: 100%;
-    }
-    .container{
-        width: 90%;
-    }
+   
 
     .copa-section {
       display: block;
@@ -107,7 +148,7 @@ img{
         grid-template-columns: repeat(1, 1fr);
       }
     
-     .players {
+     .players, .kit-gallery{
         grid-template-columns: repeat(1, 1fr);
         
       }
